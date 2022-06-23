@@ -8,6 +8,7 @@ import { UsersService } from 'src/app/services/users.service';
 })
 export class PageUsersComponent implements OnInit {
 users$ = this.usersService.users$
+loggedInUser$ = this.usersService.loggedInUser$;
   constructor(
     private usersService: UsersService,
 
